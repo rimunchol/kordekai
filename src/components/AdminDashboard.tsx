@@ -444,7 +444,7 @@ function AiConfig() {
 
       <label className="block max-w-sm">
         <span className="mb-1 block text-sm font-medium">Model</span>
-        <span className="mb-2 block text-sm text-muted">Pick from the models your Cerebras key can access, or type an id.</span>
+        <span className="mb-2 block text-sm text-muted">Pick from the models your Navy key can access, or type an id.</span>
         <input list="models" value={model} onChange={(e) => { setModel(e.target.value); setState("idle"); }} required className={field} />
         <datalist id="models">{models.map((m) => <option key={m} value={m} />)}</datalist>
       </label>

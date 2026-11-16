@@ -14,14 +14,14 @@ export const env = {
     if (s.length < 32) throw new Error("AUTH_SECRET must be at least 32 characters.");
     return s;
   },
-  get cerebrasKey() {
-    return required("CEREBRAS_API_KEY");
+  get navyKey() {
+    return required("NAVY_API_KEY");
   },
-  get cerebrasBaseUrl() {
-    return (process.env.CEREBRAS_BASE_URL || "https://api.cerebras.ai/v1").replace(/\/$/, "");
+  get navyBaseUrl() {
+    return (process.env.NAVY_BASE_URL || "https://api.navy/v1").replace(/\/$/, "");
   },
   get defaultModel() {
-    return process.env.CEREBRAS_MODEL || "gpt-oss-120b";
+    return process.env.NAVY_MODEL || "gpt-4.1";
   },
   get developerUsername() {
     return (process.env.DEVELOPER_USERNAME || "").trim().toLowerCase();

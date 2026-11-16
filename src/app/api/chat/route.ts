@@ -6,7 +6,7 @@ import { requireUser } from "@/lib/session";
 import { sql } from "@/lib/db";
 import { getAiConfig } from "@/lib/settings";
 import { titleFromMessage } from "@/lib/conversations";
-import { openChatStream, readContentDeltas, type ChatMessage } from "@/lib/cerebras";
+import { openChatStream, readContentDeltas, type ChatMessage } from "@/lib/navy";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
