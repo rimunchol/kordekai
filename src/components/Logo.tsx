@@ -1,4 +1,4 @@
-/** Geometric K: one vertical stem and one chevron that meets it at the optical centre. */
+/** Geometric K: one vertical stem and one chevron that meets it at the optical centre */
 export function Logo({ size = 28, className }: { size?: number; className?: string }) {
   return (
     <svg
